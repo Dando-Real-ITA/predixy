@@ -173,7 +173,7 @@ Command Command::CmdPool[AvailableCommands] = {
     {Unsubscribe,       "unsubscribe",      1,  MaxArgs,   Write|SMultiKey},
     {SubMsg,            "\000SubMsg",       0,  0,         Admin},
     {Dbsize,            "dbsize",           1,  1,         Read|NoKey},
-    {Memory,            "memory",           2,  4,         Read},
+    {Memory,            "memory",           2,  MaxArgs,   Read},
     {Module,            "module",           2,  MaxArgs,   Write},
     {Client,            "client",           2,  MaxArgs,   Write},
 };
