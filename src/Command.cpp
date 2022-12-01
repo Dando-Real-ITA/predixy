@@ -173,9 +173,9 @@ Command Command::CmdPool[AvailableCommands] = {
     {Unsubscribe,       "unsubscribe",      1,  MaxArgs,   Write|SMultiKey},
     {SubMsg,            "\000SubMsg",       0,  0,         Admin},
     {Dbsize,            "dbsize",           1,  1,         Read|NoKey},
-    {Memory,            "memory",           2,  MaxArgs,   Read},
-    {Module,            "module",           2,  MaxArgs,   Write},
-    {Client,            "client",           2,  MaxArgs,   Write},
+    {Memory,            "memory",           2,  MaxArgs,   Read|NoKey},
+    {Module,            "module",           2,  MaxArgs,   Write|NoKey},
+    {Client,            "client",           2,  MaxArgs,   Write|NoKey}
 };
 
 int Command::Sentinel = Command::MaxCommands;
