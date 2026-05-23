@@ -193,6 +193,11 @@ public:
         Unsubscribe,
         SubMsg,
 
+        Dbsize,
+        Memory,
+        Module,
+        Client,
+
         MaxCommands,
         MaxCustomCommands = 16,
         AvailableCommands = MaxCommands + MaxCustomCommands,
